@@ -39,7 +39,6 @@ properties:
   ADMIN_USER: wpadmin
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
-  ENABLE_BACKUP_METRICS : 1
   MYSQL_PASSWORD:
      vault: MYSQL_PASSWORD_KEY
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
