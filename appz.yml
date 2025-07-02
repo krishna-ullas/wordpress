@@ -21,11 +21,11 @@ volumes:
 - claim: wordpress-data
   mount: /var/www/html/wp-content/uploads
   name: uploads
-  size: 5Gi   
+  size: 2Gi   
 - claim: wordpress-backup
   mount: /appz/backup
   name: backup
-  size: 5Gi 
+  size: 2Gi 
   
 properties:
   ENABLE_HA: "no"  
@@ -39,6 +39,7 @@ properties:
   ADMIN_USER: wpadmin
   ADMIN_EMAIL: appzdev@cloudbourne.co
   SITE_TITLE: "Wordpress AppZ Workshop Demo"
+  ENABLE_BACKUP_METRICS : 1
   MYSQL_PASSWORD:
      vault: MYSQL_PASSWORD_KEY
   #Generate hash at https://ehikioya.com/wordpress-password-hash-generator/
